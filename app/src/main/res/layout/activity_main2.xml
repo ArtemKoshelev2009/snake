@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:layout_gravity="center"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_below="@id/recordTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ggTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="Масштаб карты: 0"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/black"/>
+        <TextView
+            android:id="@+id/recordTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Настройки"
+            android:textColor="@color/green"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@color/black"/>
+
+        <SeekBar
+            android:id="@+id/switchMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/green"
+            android:progressDrawable="@color/green"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:onClick="solveLinear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green"
+            android:src="@drawable/left_arrow"/>
+    </RelativeLayout>
+</LinearLayout>
